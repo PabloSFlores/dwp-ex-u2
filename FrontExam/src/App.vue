@@ -1,7 +1,7 @@
 <template>
   <b-container id="app" style="height: 2000px;">
     <!-- Carrusel -->
-    <b-row class="my-5">
+    <b-row class="my-5" v-show="showElement">
       <b-col cols="12">
         <b-carousel id="carousel-no-animation" style="text-shadow: 0px 0px 2px #000;" no-animation indicators
           img-width="800" img-height="400">
