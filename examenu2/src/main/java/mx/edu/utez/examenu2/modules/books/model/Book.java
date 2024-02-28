@@ -25,7 +25,7 @@ public class Book {
     private String author;
     @Column(columnDefinition = "TIMESTAMP", nullable = false)
     private LocalDate publishDate;
-    @Column(columnDefinition = "TEXT")
+    @Column(columnDefinition = "LONGTEXT")
     private String cover;
 
 }

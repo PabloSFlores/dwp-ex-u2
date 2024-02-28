@@ -48,7 +48,7 @@ const getBooks = async (params) => {
 
 const getBooksCover = async (params) => {
     try {
-        const pagination = params ? `?page=${params?.page || 0}&size=${params?.size || 10}&sort=${params?.sort || "id"},${params?.direction || "asc"}` : '';
+        const pagination = params ? `?sort=${params?.sort || "id"},${params?.direction || "asc"}` : '';
         const response = await axios.get(`${api}paged/covered/${pagination}`);
         return response.data;
     } catch (error) {
@@ -66,9 +66,9 @@ const getBook = async (bookId) => {
     }
 }
 
-const changeStatus = async (bookId) => {
+const deleteBook = async (bookId) => {
     try {
-        const response = await axios.patch(api + bookId)
+        const response = await axios.delete(api + bookId)
         return response.data;
     } catch (error) {
         console.log("Change status fallo!", error);
@@ -78,8 +78,9 @@ const changeStatus = async (bookId) => {
 
 export default {
     getBooks,
+    getBooksCover,
     getBook,
     saveBook,
     updateBook,
-    changeStatus
+    deleteBook
 }

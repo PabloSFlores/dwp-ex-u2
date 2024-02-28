@@ -9,7 +9,7 @@
   "dependencies": {
     "@asika32764/vue-animate": "^3.0.2",
     "axios": "^1.6.7",
-    "bootstrap": "^5.3.3",
+    "bootstrap": "4.6",
     "bootstrap-vue": "^2.23.1",
     "vue": "^2.7.16",
     "vue-router": "^2.8.1"
