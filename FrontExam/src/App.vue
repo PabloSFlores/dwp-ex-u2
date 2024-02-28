@@ -68,7 +68,7 @@
       <b-col cols="4" class="p-5">
         <b-row>
           <b-col cols="12" class="my-2">
-            <b-button>+</b-button>
+            <b-button v-b-modal.modal-1>+</b-button>
           </b-col>
           <b-col cols="12" class="mb-2">
             <b-button>Editar</b-button>
@@ -79,6 +79,9 @@
         </b-row>
       </b-col>
     </b-row>
+    <b-modal id="modal-1" title="BootstrapVue">
+      <p class="my-4">Hello from modal!</p>
+    </b-modal>
   </b-container>
 </template>
 

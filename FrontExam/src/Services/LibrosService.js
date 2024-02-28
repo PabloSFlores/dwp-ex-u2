@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const api = "http://192.168.34.250:8080/api/book/"
+const api = "http://localhost:8080/api/book/"
 
 const saveBook = async (bookData) => {
     try {
